@@ -1,0 +1,59 @@
+/* General styling
+-------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3F3;
+    color: #111111;
+}
+
+header {
+    text-align: center;
+    background-color: #E0E0E0;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #E0E0E0;
+
+    p {
+        margin: 0;
+    }
+}
+
+.question {
+    text-align: center;
+}
+
+/* Flexbox stuff
+-------------------------*/
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    > section {
+        flex: 1;
+    }
+}
+
+.options {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 960px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.option {
+    margin: 5px;
+    flex: 0 1 140px;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
